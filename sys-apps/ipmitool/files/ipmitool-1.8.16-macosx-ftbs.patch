@@ -1,0 +1,10 @@
+--- ipmitool-1.8.16/src/plugins/ipmi_intf.c.bak	2016-04-25 12:03:43.000000000 +0200
++++ ipmitool-1.8.16/src/plugins/ipmi_intf.c	2016-04-25 12:06:49.000000000 +0200
+@@ -31,6 +31,7 @@
+  */
+ #define _XOPEN_SOURCE 700
+ #define _GNU_SOURCE 1
++#define _DARWIN_C_SOURCE 1
+ 
+ #include <stdio.h>
+ #include <stdlib.h>

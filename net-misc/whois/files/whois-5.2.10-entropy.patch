@@ -1,0 +1,15 @@
+--- mkpasswd.c.old	2015-09-01 13:25:57.000000000 +0200
++++ mkpasswd.c	2015-09-01 13:26:41.000000000 +0200
+@@ -390,10 +390,10 @@
+ void generate_salt(char *const buf, const unsigned int len)
+ {
+     unsigned int i;
+-    unsigned char *entropy;
+ 
++    unsigned char *entropy;
+ #if defined HAVE_ARC4RANDOM_BUF
+-    void *entropy = NOFAIL(malloc(len));
++    entropy = NOFAIL(malloc(len));
+     arc4random_buf(entropy, len);
+ #else
+     entropy = get_random_bytes(len);
