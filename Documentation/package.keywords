@@ -1,0 +1,399 @@
+# Just some random things I wanted to keyword. Some of them works, some of them not.
+
+sys-apps/msr-tools **
+# required by net-mail/mailman-2.1.20::gentoo_prefix
+# required by mailman (argument)
+=virtual/cron-0-r1 **
+# required by sys-process/cronie-1.5.0::gentoo_prefix
+# required by virtual/cron-0-r1::gentoo_prefix
+# required by net-mail/mailman-2.1.20::gentoo_prefix
+# required by mailman (argument)
+=sys-process/cronbase-0.3.3 **
+# required by virtual/cron-0-r1::gentoo_prefix
+# required by net-mail/mailman-2.1.20::gentoo_prefix
+# required by mailman (argument)
+=sys-process/cronie-1.5.0 **
+# required by mailman (argument)
+=net-mail/mailman-2.1.20 **
+=app-text/dos2unix-7.2.3 **
+=dev-util/strace-4.10* **
+dev-perl/WWW-Curl **
+# required by sys-devel/gcc:4.8 (argument)
+=sys-devel/gcc-4.8.4 **
+=dev-perl/Log-Agent-1.0.0 **
+=app-portage/g-cpan-0.16.5 **
+=app-text/xmlstarlet-1.6.1 **
+# required by Config-General (argument)
+=dev-perl/Config-General-2.580.0 **
+dev-perl/Config-General **
+dev-perl/File-Sync **
+net-misc/whois **
+# required by dev-vcs/tig (argument)
+=dev-vcs/tig-2.1.1 **
+=sys-libs/ncurses-6.0-r1 **
+
+
+# required by dev-perl/perl-ldap-0.650.0::gentoo_prefix
+# required by net-nds/shelldap-1.3.0::gentoo_prefix
+# required by net-nds/shelldap (argument)
+=dev-perl/Convert-ASN1-0.270.0 **
+# required by net-nds/shelldap-1.3.0::gentoo_prefix
+# required by net-nds/shelldap (argument)
+=dev-perl/Term-Shell-0.30.0-r1 **
+# required by net-nds/shelldap (argument)
+=net-nds/shelldap-1.3.0 **
+# required by net-nds/shelldap-1.3.0::gentoo_prefix
+# required by net-nds/shelldap (argument)
+=dev-perl/Term-ReadLine-Gnu-1.226.0 **
+# required by net-nds/shelldap-1.3.0::gentoo_prefix
+# required by net-nds/shelldap (argument)
+=dev-perl/perl-ldap-0.650.0 **
+
+
+# required by dev-python/setuptools-18.3.2::gentoo_prefix
+# required by net-misc/pssh-2.3.1-r1::gentoo_prefix
+# required by pssh (argument)
+=dev-python/packaging-15.3-r1 **
+# required by dev-python/setuptools-18.3.2::gentoo_prefix
+# required by net-misc/pssh-2.3.1-r1::gentoo_prefix
+# required by pssh (argument)
+=dev-python/certifi-2015.9.6.2 **
+# required by pssh (argument)
+=net-misc/pssh-2.3.1-r1 **
+
+=net-analyzer/openbsd-netcat-1.84 **
+# required by app-misc/ca-certificates-20150426.3.20-r1::gentoo_prefix
+# required by dev-vcs/mercurial-3.5.2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=app-misc/c_rehash-1.7-r1 **
+=app-misc/c_rehash-1.7-r1 **
+=sys-process/psmisc-22.21-r2 **
+# required by dev-lang/rakudo-2015.07.2::gentoo_prefix
+# required by rakudo (argument)
+=dev-lang/nqp-2015* **
+# required by dev-lang/moarvm-2015.07::gentoo_prefix
+# required by dev-lang/nqp-2015.07.2::gentoo_prefix[moar]
+# required by dev-lang/rakudo-2015.07.2::gentoo_prefix
+# required by rakudo (argument)
+=dev-libs/libuv-1.7.0 **
+# required by rakudo (argument)
+=dev-lang/rakudo-2015* **
+# required by dev-lang/nqp-2015.07.2::gentoo_prefix[moar]
+# required by dev-lang/rakudo-2015.07.2::gentoo_prefix
+# required by rakudo (argument)
+=dev-lang/moarvm-2015* **
+# required by x11-libs/cairo-1.14.2-r1::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=sys-libs/binutils-libs-2.25.1-r1 **
+sys-libs/binutils-libs **
+net-libs/http-parser **
+# required by sys-libs/binutils-libs-2.25.1-r2::gentoo_prefix
+# required by x11-libs/cairo-1.14.4::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=sys-devel/binutils-config-5-r2 **
+=sys-devel/binutils-config-5-r2 **
+=dev-python/ipaddress-1.0.15 **
+=dev-python/idna-2.0 **
+=virtual/python-ipaddress-1.0 **
+# required by sys-apps/ipmitool (argument)
+sys-apps/ipmitool **
+# required by dev-libs/glib-2.44.1::gentoo_prefix[xattr]
+# required by dev-util/pkgconfig-0.29::gentoo_prefix[-internal-glib]
+# required by virtual/pkgconfig-0-r1::gentoo_prefix
+# required by x11-libs/cairo-1.14.6::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=sys-apps/attr-2.4.47-r2 **
+# required by dev-python/setuptools-19.1.1::gentoo_prefix
+# required by dev-python/requests-2.9.0::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-python/certifi-2015.11.20.1 **
+# required by virtual/libintl-0-r2::gentoo_prefix
+# required by sys-process/psmisc-22.21-r2::gentoo_prefix
+# required by net-dns/bind-9.10.3::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-libs/libintl-0.19.6 **
+# required by dev-python/sphinx-1.3.3::gentoo_prefix
+# required by dev-python/pygments-2.0.2-r2::gentoo_prefix[doc]
+# required by dev-python/docutils-0.12::gentoo_prefix
+# required by dev-python/epydoc-3.0.1-r2::gentoo_prefix
+# required by dev-python/pycrypto-2.6.1-r1::gentoo_prefix[doc,python_targets_python2_7]
+# required by dev-python/paramiko-1.16.0::gentoo_prefix
+# required by paramiko (argument)
+=dev-python/alabaster-0.7.6 **
+# required by dev-python/sphinx-1.3.3::gentoo_prefix
+# required by dev-python/pygments-2.0.2-r2::gentoo_prefix[doc]
+# required by dev-python/docutils-0.12::gentoo_prefix
+# required by dev-python/epydoc-3.0.1-r2::gentoo_prefix
+# required by dev-python/pycrypto-2.6.1-r1::gentoo_prefix[doc,python_targets_python2_7]
+# required by dev-python/paramiko-1.16.0::gentoo_prefix
+# required by paramiko (argument)
+=dev-python/snowballstemmer-1.2.0 **
+# required by dev-python/sphinx-1.3.3::gentoo_prefix
+# required by dev-python/pygments-2.0.2-r2::gentoo_prefix[doc]
+# required by dev-python/docutils-0.12::gentoo_prefix
+# required by dev-python/epydoc-3.0.1-r2::gentoo_prefix
+# required by dev-python/pycrypto-2.6.1-r1::gentoo_prefix[doc,python_targets_python2_7]
+# required by dev-python/paramiko-1.16.0::gentoo_prefix
+# required by paramiko (argument)
+=dev-python/sphinx_rtd_theme-0.1.9 **
+
+
+# required by dev-python/sphinx-1.3.3::gentoo_prefix
+# required by dev-python/pygments-2.0.2-r2::gentoo_prefix[doc]
+# required by dev-python/docutils-0.12::gentoo_prefix
+# required by dev-python/epydoc-3.0.1-r2::gentoo_prefix
+# required by dev-python/pycrypto-2.6.1-r1::gentoo_prefix[doc,python_targets_python2_7]
+# required by dev-python/paramiko-1.16.0::gentoo_prefix
+# required by paramiko (argument)
+=dev-python/alabaster-0.7.6 **
+# required by dev-python/sphinx-1.3.3::gentoo_prefix
+# required by dev-python/pygments-2.0.2-r2::gentoo_prefix[doc]
+# required by dev-python/docutils-0.12::gentoo_prefix
+# required by dev-python/epydoc-3.0.1-r2::gentoo_prefix
+# required by dev-python/pycrypto-2.6.1-r1::gentoo_prefix[doc,python_targets_python2_7]
+# required by dev-python/paramiko-1.16.0::gentoo_prefix
+# required by paramiko (argument)
+=dev-python/snowballstemmer-1.2.0 **
+# required by dev-python/sphinx-1.3.3::gentoo_prefix
+# required by dev-python/pygments-2.0.2-r2::gentoo_prefix[doc]
+# required by dev-python/docutils-0.12::gentoo_prefix
+# required by dev-python/epydoc-3.0.1-r2::gentoo_prefix
+# required by dev-python/pycrypto-2.6.1-r1::gentoo_prefix[doc,python_targets_python2_7]
+# required by dev-python/paramiko-1.16.0::gentoo_prefix
+# required by paramiko (argument)
+=dev-python/sphinx_rtd_theme-0.1.9 **
+# required by dev-python/astroid-1.4.2::gentoo_prefix
+# required by dev-python/pylint-1.5.2::gentoo_prefix
+# required by pylint (argument)
+=dev-python/lazy-object-proxy-1.2.1 **
+# required by dev-python/pylint-1.5.2::gentoo_prefix
+# required by pylint (argument)
+=dev-python/colorama-0.3.5 **
+# required by dev-python/astroid-1.4.2::gentoo_prefix
+# required by dev-python/pylint-1.5.2::gentoo_prefix
+# required by pylint (argument)
+=dev-python/wrapt-1.10.6 **
+# required by @selected
+# required by @world (argument)
+=net-nds/shelldap-1.3.1 **
+# required by @selected
+# required by @world (argument)
+=app-text/dos2unix-7.3.2 **
+# required by =gnulib-2013* (argument)
+=dev-libs/gnulib-2013.10.28.22.33.52 **
+# required by =gnulib-2016* (argument)
+=dev-libs/gnulib-2016.01.25.15.46.29 **
+=sys-devel/gcc-4.8.5 **
+<sys-devel/gcc-9999 **
+# required by dev-python/requests-2.9.1-r2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-python/urllib3-1.14 **
+# required by dev-python/urllib3-1.14::gentoo_prefix[python_targets_python2_7]
+# required by dev-python/requests-2.9.1-r2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-python/backports-ssl-match-hostname-3.5.0.1-r1 **
+# required by dev-python/backports-ssl-match-hostname-3.5.0.1-r1::gentoo_prefix
+# required by dev-python/urllib3-1.14::gentoo_prefix[python_targets_python2_7]
+# required by dev-python/requests-2.9.1-r2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-python/backports-1.0 **
+# required by dev-python/urllib3-1.14::gentoo_prefix
+# required by dev-python/requests-2.9.1-r2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-python/PySocks-1.5.6 **
+=sys-devel/clang-3.8* **
+=sys-devel/llvm-3.8* **
+# required by media-sound/mpd-0.19.12::gentoo_prefix[musepack]
+# required by media-sound/mpd (argument)
+=media-sound/musepack-tools-465-r1 **
+# required by media-sound/musepack-tools-465-r1::gentoo_prefix
+# required by media-sound/mpd-0.19.12::gentoo_prefix[musepack]
+# required by media-sound/mpd (argument)
+=media-libs/libreplaygain-477-r1 **
+# required by media-sound/mpg123-1.23.2::gentoo_prefix
+# required by media-sound/mpd-0.19.12::gentoo_prefix[mpg123]
+# required by media-sound/mpd (argument)
+=app-eselect/eselect-mpg123-0.1 **
+# required by media-sound/mpd-0.19.12::gentoo_prefix[libmpdclient]
+# required by media-sound/mpd (argument)
+=media-libs/libmpdclient-2.10 **
+# required by media-sound/musepack-tools-465-r1::gentoo_prefix
+# required by media-sound/mpd-0.19.12::gentoo_prefix[musepack]
+# required by media-sound/mpd (argument)
+=media-libs/libcuefile-477-r1 **
+# required by =pypy-5.0.0 (argument)
+=dev-python/pypy-5.0.0 **
+# required by =htop-2.0.1 (argument)
+=sys-process/htop-2.0.1 **
+# required by app-text/asciidoc-9999::gentoo_prefix
+# required by app-text/dvisvgm-1.10::gentoo_prefix
+# required by app-text/texlive-2015::gentoo_prefix[extra]
+# required by app-text/texlive (argument)
+=dev-util/aap-1.091-r2 **
+# required by app-text/asciidoc-9999::gentoo_prefix[-test]
+# required by app-text/dvisvgm-1.10::gentoo_prefix
+# required by app-text/texlive-2015::gentoo_prefix[extra]
+# required by app-text/texlive (argument)
+=dev-util/source-highlight-3.1.7-r2 **
+# required by app-text/dvisvgm-1.10::gentoo_prefix
+# required by app-text/texlive-2015::gentoo_prefix[extra]
+# required by app-text/texlive (argument)
+=app-text/asciidoc-8* **
+=dev-libs/fribidi-0.19.7 **
+=media-video/mpv-9999 **
+dev-perl/Log-Agent **
+dev-python/pip **
+# required by qtgui (argument)
+=dev-qt/qtgui-5.6.0-r1 **
+# required by dev-qt/qtgui-5.6.0-r1::local
+# required by qtgui (argument)
+=dev-qt/qtcore-5.6.0 **
+# required by dev-python/pyopenssl-16.0.0::gentoo_prefix
+# required by dev-python/requests-2.9.1-r2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=dev-python/cryptography-1* **
+# required by dev-perl/Term-Shell-0.90::gentoo_prefix
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-perl/Text-Autoformat-1.740.0 **
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-perl/Term-ReadLine-Gnu-1.310.0 **
+# required by sys-devel/binutils-apple-7.2::gentoo_prefix
+# required by sys-devel/llvm-3.8.0-r2::gentoo_prefix
+# required by @selected
+# required by @world (argument)
+=app-arch/xar-1.6.1 **
+# required by dev-perl/Text-Autoformat-1.740.0::gentoo_prefix
+# required by dev-perl/Term-Shell-0.90::gentoo_prefix
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-perl/Text-Reform-1.200.0-r1 **
+# required by @__auto_slot_operator_replace_installed__ (argument)
+=dev-perl/Term-Shell-0.90 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-lua/lpeg-1.0.0-r1 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-libs/unibilium-1.1.4 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-lang/luajit-2.0.4 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-libs/msgpack-1.1.0 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-libs/libtermkey-0.18 **
+# required by neovim (argument)
+<app-editors/neovim-9999 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-libs/libvterm-0.0_pre20160305 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix
+# required by neovim (argument)
+=dev-lua/mpack-1.0.2 **
+dev-lang/luajit **
+# required by dev-lang/luajit-2.1.9999::lua
+# required by =luajit-2.1* (argument)
+=virtual/lua-5 **
+# required by dev-lang/luajit-2.1.9999::lua
+# required by virtual/lua-5::lua[luajit,-bit]
+=app-eselect/eselect-luajit-1 **
+# required by dev-python/trollius-2.1::gentoo_prefix
+# required by dev-python/neovim-python-client-0.1.9::gentoo_prefix[python_targets_python2_7,-python_targets_python3_3]
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=virtual/python-futures-0 **
+# required by virtual/python-futures-0::gentoo_prefix[python_targets_python2_7]
+# required by dev-python/trollius-2.1::gentoo_prefix
+# required by dev-python/neovim-python-client-0.1.9::gentoo_prefix[python_targets_python2_7,-python_targets_python3_3]
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=dev-python/futures-3.0.5 **
+# required by dev-python/neovim-python-client-0.1.9::gentoo_prefix
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=virtual/python-greenlet-1.0 **
+# required by dev-python/neovim-python-client-0.1.9::gentoo_prefix
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=dev-python/msgpack-0.4.7 **
+# required by virtual/python-greenlet-1.0::gentoo_prefix[-python_targets_python3_4,python_targets_python2_7,-python_targets_python3_3,python_targets_python3_5]
+# required by dev-python/neovim-python-client-0.1.9::gentoo_prefix
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=dev-python/greenlet-0.4.9 **
+# required by dev-python/neovim-python-client-0.1.9::gentoo_prefix[python_targets_python2_7,-python_targets_python3_3]
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=dev-python/trollius-2.1 **
+# required by app-editors/neovim-0.1.4::gentoo_prefix[python]
+# required by neovim (argument)
+=dev-python/neovim-python-client-0.1.9 **
+=app-eselect/eselect-luajit-1-r1 **
+=app-eselect/eselect-lua-2-r1 **
+=dev-lua/lpeg-1.0.0-r2 **
+=dev-lua/mpack-1.0.2-r1 **
+# required by sys-apps/ack-2.14::gentoo_prefix
+# required by sys-apps/ack (argument)
+=dev-perl/File-Next-1.120.0-r1 **
+# required by sys-apps/ack (argument)
+=sys-apps/ack-2.14 **
+dev-util/google-perftools **
+sys-libs/libunwind **
+
+<sys-libs/freeipmi-9999 **
+<sys-libs/openipmi-9999 **
+sys-libs/argp-standalone **
+# required by @selected
+# required by @world (argument)
+=app-text/dos2unix-7.3.4 **
+# required by @selected
+# required by @world (argument)
+=dev-vcs/cvs-1.12.12-r10 **
+# required by media-video/mpv-9999::gentoo_prefix[uchardet,iconv]
+# required by mpv (argument)
+=dev-libs/uchardet-9999 **
+=app-arch/lz4-0* **
+# required by dev-db/clickhouse-1.1.54023::clickhouse
+# required by clickhouse (argument)
+=dev-util/patchelf-0.9 **
+# required by dev-db/mariadb-10.1.17::gentoo_prefix[perl]
+# required by virtual/libmysqlclient-18::gentoo_prefix
+# required by dev-db/clickhouse-1.1.54023::clickhouse
+# required by clickhouse (argument)
+=virtual/perl-Time-HiRes-1.973.300 **
+# required by dev-db/clickhouse-1.1.54023::clickhouse
+# required by clickhouse (argument)
+=sys-libs/libtermcap-compat-2.0.8-r4 **
+# required by clickhouse (argument)
+=dev-db/clickhouse-1.1.54023 **
+# required by dev-db/mariadb-10.1.17::gentoo_prefix[cracklib,server]
+# required by virtual/libmysqlclient-18::gentoo_prefix
+# required by dev-db/clickhouse-1.1.54023::clickhouse
+# required by clickhouse (argument)
+=sys-libs/cracklib-2.9.6-r1 **
+# required by dev-db/clickhouse-1.1.54023::clickhouse
+# required by clickhouse (argument)
+=dev-libs/zookeeper-c-3.4.9 **
+# required by =llvm-3.9.0* (argument)
+=sys-devel/llvm-3.9.0 **
+# required by =clang-3.9.0* (argument)
+=sys-devel/clang-3.9.0-r100 **
+# required by sys-devel/llvm-3.9.0::gentoo_prefix
+# required by sys-devel/clang-3.9.0-r100::gentoo_prefix
+# required by sys-libs/libcxxabi-3.9.0::local
+# required by sys-libs/libcxx-3.9.0::local
+# required by =libcxx-3.9.0* (argument)
+=sys-devel/clang-runtime-3.9.0 **
+=dev-libs/libev-4.22 **
