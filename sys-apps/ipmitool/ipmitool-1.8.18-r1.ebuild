@@ -7,18 +7,22 @@ inherit autotools eutils
 
 DESCRIPTION="Utility for controlling IPMI enabled devices."
 HOMEPAGE="http://ipmitool.sf.net/"
-DEBIAN_PR="3.debian"
+DEBIAN_PR="1.debian"
 DEBIAN_P="${P/-/_}"
 DEBIAN_PF="${DEBIAN_P}-${DEBIAN_PR}"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz
-	https://launchpad.net/ubuntu/+archive/primary/+files/${DEBIAN_PF}.tar.xz"
+	http://http.debian.net/debian/pool/main/i/${PN}/${DEBIAN_PF}.tar.xz"
+	# https://launchpad.net/ubuntu/+archive/primary/+files/${DEBIAN_PF}.tar.xz
 #IUSE="freeipmi openipmi status"
-IUSE="openipmi static"
+IUSE="libressl openipmi static"
 SLOT="0"
-KEYWORDS="~amd64 ~hppa ~ia64 ~ppc ~x86"
+KEYWORDS="~amd64 ~hppa ~ia64 ~ppc ~x86 ~x64-macos ~x86-macos"
 LICENSE="BSD"
 
-RDEPEND="dev-libs/openssl:0="
+RDEPEND="
+	!libressl? ( dev-libs/openssl:0= )
+	libressl? ( dev-libs/libressl:0= )
+	sys-libs/readline:0="
 DEPEND="${RDEPEND}
 		openipmi? ( sys-libs/openipmi )
 		virtual/os-headers"
@@ -26,14 +30,15 @@ DEPEND="${RDEPEND}
 # ipmitool CAN build against || ( sys-libs/openipmi sys-libs/freeipmi )
 # but it doesn't actually need either.
 
+PATCHES="${FILESDIR}/${PN}-1.8.18-openssl-1.1.patch"
+
 src_prepare() {
 	default
 	[ -d "${S}"/debian ] && mv "${S}"/debian{,.package}
 	ln -s "${WORKDIR}"/debian "${S}"
-	for p in $(cat debian/patches/series) ; do
+	for p in $(grep -v "^#" debian/patches/series) ; do
 		eapply debian/patches/$p
 	done
-	eapply "${FILESDIR}/${P}-macosx-ftbs.patch"
 
 	eautoreconf
 }
@@ -45,11 +50,6 @@ src_configure() {
 	# FreeIPMI does build now, but is disabled until the other arches keyword it
 	#	`use_enable freeipmi intf-free` \
 	# --enable-ipmievd is now unconditional
-	if [[ ${CHOST} != *-linux-* ]]; then
-		myconf="--disable-intf-usb"
-	else
-		myconf="--enable-intf-usb"
-	fi
 	econf \
 		$(use_enable static) \
 		--enable-ipmishell \
@@ -63,9 +63,8 @@ src_configure() {
 		--disable-intf-imb \
 		--disable-intf-lipmi \
 		--disable-internal-md5 \
-		${myconf} \
-		--with-kerneldir=/usr --bindir=/usr/sbin \
-		|| die "econf failed"
+		--with-kerneldir=${EPREFIX}/usr --bindir=${EPREFIX}/usr/sbin
+
 	if [[ ${CHOST} != *-darwin* ]] ; then
 		# Fix linux/ipmi.h to compile properly. This is a hack since it doesn't
 		# include the below file to define some things.
@@ -73,11 +72,12 @@ src_configure() {
 	else
 		sed -i 's#HAVE_PRAGMA_PACK#DISABLE_PRAGMA_PACK#' "${S}/include/ipmitool/ipmi_user.h"
 		sed -i 's#s6_addr16#s6_addr#' "${S}/src/plugins/ipmi_intf.c"
+		sed -i 's/malloc\.h/stdlib.h/' "${S}/lib/ipmi_cfgp.c"
 	fi
 }
 
 src_install() {
-	emake DESTDIR="${ED}" PACKAGE="${PF}" install || die "emake install failed"
+	emake DESTDIR="${D}" PACKAGE="${PF}" install
 
 	into /usr
 	dosbin contrib/bmclanconf
