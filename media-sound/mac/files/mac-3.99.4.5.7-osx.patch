@@ -1,0 +1,12 @@
+--- mac-3.99-u4-b5-s7/configure.bak	2017-01-03 17:25:53.000000000 +0100
++++ mac-3.99-u4-b5-s7/configure	2017-01-03 17:27:02.000000000 +0100
+@@ -15272,6 +15272,9 @@
+   *bsd*|linux*|beos|irix*|solaris*)
+     YASM_FORMAT="-f elf"
+     ;;
++  *darwin*)
++    YASM_FORMAT="-f macho64"
++    ;;
+   [cC][yY][gG][wW][iI][nN]*|mingw32*|mks*)
+     YASM_FORMAT="-f win32"
+     ;;
